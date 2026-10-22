@@ -1,0 +1,152 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    padding: 30px 20px;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.logo-box {
+    width: 45px;
+    height: 45px;
+    background: #08a83e;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 21px;
+    margin: 0;
+}
+
+.logo p {
+    color: #777;
+    font-size: 13px;
+    margin: 3px 0 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 15px;
+    text-decoration: none;
+    color: #777;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    background: #e9f8ee;
+    color: #08a83e;
+}
+
+.menu a.active {
+    background: #08a83e;
+    color: white;
+}
+
+.admin {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #20b978;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.admin small {
+    color: #777;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+/* AREA KONTEN */
+.content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 40px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow-x: auto;
+}
+
+/* SUPAYA TABEL TIDAK KEPOTONG */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+/* NAMA / TEKS TABEL JANGAN TERPOTONG */
+th,
+td {
+    white-space: nowrap;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* HP / LAYAR KECIL */
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+        padding: 25px;
+    }
+}

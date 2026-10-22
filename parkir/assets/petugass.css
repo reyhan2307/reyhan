@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.role {
+    font-size: 12px;
+    color: #16a34a;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #444444;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #16a34a;
+    color: white;
+}
+
+.sidebar .logout {
+    margin-top: 40px;
+    color: #dc2626;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 35px;
+}
+
+.topbar {
+    margin-bottom: 30px;
+}
+
+.topbar h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.topbar p {
+    color: #777777;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 35px;
+    color: #16a34a;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #888888;
+}
+
+/* MENU */
+.menu-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.menu-container h2 {
+    margin-bottom: 25px;
+}
+
+.menu-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-button {
+    width: 220px;
+    padding: 25px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #222222;
+    transition: 0.2s;
+}
+
+.menu-button:hover {
+    background: #dcfce7;
+    transform: translateY(-3px);
+}
+
+.menu-button span {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.menu-button b {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.menu-button small {
+    color: #777777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        width: 100%;
+    }
+}

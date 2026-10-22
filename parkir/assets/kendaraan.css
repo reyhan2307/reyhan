@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+    padding: 25px 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.logo-box {
+    width: 45px;
+    height: 45px;
+    background: #25eb36;
+    color: white;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.logo p {
+    color: #777;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu li a {
+    display: block;
+    padding: 13px 15px;
+    text-decoration: none;
+    color: #555;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.menu li a.active {
+    background: #16a34a !important;
+    color: white !important;
+
+}
+
+/* ADMIN */
+.admin {
+    position: absolute;
+    bottom: 20px;
+    left: 18px;
+    right: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.admin-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+    background: #25eb4a;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.admin small {
+    color: #888;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 240px;
+    padding: 35px;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.header p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* BUTTON TAMBAH */
+.btn-tambah {
+    display: inline-block;
+    padding: 12px 18px;
+
+    background: #25eb5c;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-tambah:hover {
+    background: #1dd840;
+}
+
+/* TABLE */
+.table-container {
+    background: white;
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+thead {
+    background: #f8fafc;
+}
+
+th {
+    padding: 15px 12px;
+    text-align: left;
+
+    font-size: 13px;
+    color: #555;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+    padding: 15px 12px;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #fafafa;
+}
+
+/* AKSI */
+.aksi {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.btn-edit,
+.btn-hapus {
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background: #25eb5e;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #1dd869;
+}
+
+.btn-hapus {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-hapus:hover {
+    background: #dc2626;
+}
+
+.kosong {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
+/* UBAH WARNA BIRU MENJADI HIJAU */
+
+/* Menu Kendaraan yang aktif */
+.menu a.active {
+    background: #16a34a !important;
+    color: white !important;
+}
+
+/* Tombol Tambah Kendaraan */
+.btn-tambah,
+.btn-primary,
+button.tambah,
+a[href*="tambah"] {
+    background: #16a34a !important;
+    color: white !important;
+    border: none;
+}
+
+/* Efek hover */
+.menu a.active:hover,
+.btn-tambah:hover,
+.btn-primary:hover,
+button.tambah:hover {
+    background: #15803d !important;
+}
